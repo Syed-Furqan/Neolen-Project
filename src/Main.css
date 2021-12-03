@@ -1,0 +1,197 @@
+.main {
+    background: #dff1f3;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__header > p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main__pictures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 70px;
+    border-radius: 12px;
+    transition: all 500ms;
+}
+
+img:hover {
+    transform: scale(1.2);
+    border: 2px solid orangered;
+    padding: 1px;
+}
+
+.main__author-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__author-header > p:nth-of-type(1) {
+    font-size: 20px;
+    color: gray;
+}
+
+.main__author-header > p:nth-of-type(1) > strong {
+    color: dimgrey;
+}
+
+.main__author-header > p:nth-of-type(2), .main__footer-voice_attributes > div > div > p:nth-of-type(2){
+    color: orangered;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main__author-body {
+    background: white;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.main__author-body p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: gray;
+}
+
+.main__words {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__voices {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__voices-pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+    .main__pictures, .main__voices-pictures {
+        justify-content: flex-start;
+    }
+
+    .main__pictures > img {
+        height: 45px;
+        margin: 10px;
+    }
+
+    .main__voices-pictures > img {
+        height: 45px;
+        margin: 10px;
+    }
+}
+
+.main__voices-pictures-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.main__voices-pictures-info > div {
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.main__voices-pictures-info > div > p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.main__voices-pictures-info > div > img {
+    height: 40px;
+}
+
+.main__footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__footer-voice_attributes {
+    display: flex;
+    margin-top: 20px;
+}
+
+.main__footer-voice_attributes > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__footer-voice_attributes > div {
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.main > div {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 8px 10px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    color: orangered;
+}
+
+.main__footer-voice_attributes p:nth-of-type(1), .main__footer > p, .main__voices > p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #464646;
+}
+
+.main__footer-voice_attributes small {
+    font-size: 15px;
+    color: #838282
+}
+
+.progress_bar {
+    height: 8px;
+    background: #ffd3be;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.main__footer-voice_attributes .progress_bar  div {
+    height: 100%;
+    width: 45%;
+    background: orangered;
+}
+
+.fa-circle-play:before, .fa-play-circle:before {
+    font-size: 25px;
+}
+
+.fa-arrow-circle-down:before, .fa-circle-arrow-down:before {
+    font-size: 25px;
+}
+
+.sidebar__users-info > div:nth-of-type(2) .fa-align-left:before {
+    font-size: 25px;
+}

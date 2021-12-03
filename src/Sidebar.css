@@ -1,0 +1,128 @@
+.sidebar {
+    flex-basis: 25%;
+    background: #edfffe;
+    flex-grow: 1;
+}
+
+.s1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sidebar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar__header > p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    border: none;
+}
+
+.sidebar__header span {
+    font-size: 20px;
+    color: gray;
+    margin-left: 10px;
+}
+
+.sidebar__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sidebar__buttons button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.sidebar__buttons button:nth-of-type(1) {
+    background: #daf6f8;
+}
+
+.sidebar__buttons button:nth-of-type(2) {
+    background: #ffc7c1;
+    color: orangered;
+}
+
+.sidebar__users-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar__users-info p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.sidebar__users .progress_bar {
+    margin-left: 20px;
+}
+
+.sidebar__users .progress_bar > div{
+    background-color: orangered;
+    height: 100%;
+    width: 35%;
+}
+
+.sidebar__users-info >  div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__users-info > div:nth-of-type(2) > .fa-circle-play:before, .fa-play-circle:before {
+    margin-left: 10px;
+}
+
+.sidebar__users-info > div:nth-of-type(2) .fa-align-left:before {
+    margin-left: 10px;
+}
+
+.sidebar__users-info > div:nth-of-type(2) > .fa-arrow-circle-down:before, .fa-circle-arrow-down:before {
+    margin-left: 10px;
+    color: orangered;
+}
+
+.sidebar__info {
+    font-size: 15px;
+    color: gray;
+    margin-left: 20px;
+}
+
+.sidebar__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    margin-top: 200px;
+    background: white;
+}
+
+.sidebar__footer button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.sidebar__footer button:nth-of-type(1) {
+    background: white;
+    color: orangered;
+}
+
+.sidebar__footer button:nth-of-type(2) {
+    background: orangered;
+    color: white;
+}
